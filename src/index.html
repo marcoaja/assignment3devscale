@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../dist/output.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body class="bg-primary-950 font-custom">
+  <!-- Nav Bar -->
+  <header class="flex justify-between mx-80 p-6">
+    <div class="text-primary-50 text-4xl font-bold px-6 py-4 flex justify-center items-center">MARCO.</div>
+
+    <div class="text-primary-50 text-base font-medium px-6 py-4 flex justify-between items-center gap-8">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#portofolio">Portofolio</a>
+      <a href="https://github.com/">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAADDklEQVRYR+1XwXUaMRAdLb7aYZ3kTioIriC4gpgKgisIVIBdgZ0KTAc2FYQOTCoI9yTeDb6yq/zBu0SrlbQD5uC8F97jAiPp68+f+SNFL+yjXhge+vcBJYlur4i6UUQ9pegDGO7g2y6YTnHDOa65WK1o+jZWs20zIGaIgeQRDVVEH0lTV3oQQF/Hh2okjpcE/kh0r9Wim4INyRI7Js2JRm+O1KRpcSNDv37rC9zys5GWpj29/0vYCgJKHvWV1jTcGYF74ez4SJ369vQCAjND3Ohqz2DW2+HQu/hI9V17OwEVmrk105RldKpa1ImIPuH3nhDoDAxP85zm0OBXcw001Yem7ux9aoC4mvQBFpuVpGh+fKhOysWI6VKLxrmmbxolrjNaAOy69BXWRYreZ0RTU8QPS82AzIukKqN3caxSE1QN0M+lHoAFrijzE8y7hK1kqW800cCMBXuXr1+piyCgh0d97+gzKYQYSw72xQDQLQCdWf/X9q0wxKnQLbqvbWqlbBdgLoZ4H2jp3ExtBZCvspDrE+R6vgsQQ3dtXDZxiHiCijsvf68y5Kb12frZgHLoCD2gUjAVQC79SLqrlLmi649DOqoCWurvCO5UVL+lOYbA+SSBgtngaAYU6KpSZsq47QG5S36fGmosfYmoCVUW2x11W3bWDvDUUiqSCIraIzrah7C9LYUoUPZPt6j1CmaDzXWXkZTXFg2XvawcdTcE2yZb8zKY4N9KQ48wbYSZohVdStPHaaIDGsOzBi4w+K1msEFzLc3PdmqeZ9jpoxzzsuXWfPUi9fwA4Nm7xkpJj8hcOdhkqfQau2mGhiyfb9kNUTR+8KJiQNsMVLyQ6cUMxCMEO3YKTfV9msIIc4YRhgc87wfsjDB6XNsBohE2xIbrRO/UUASHqlY85BeC/gLNLJp6UAgQDpxQRiNfYUifQTVDDL2zfIAkVdoIyOgjrIlOyY49WJmsOQDt76FoHlR0W340dnyvBuMCbBMplzbaw0Tau0QM2ZpZvzqIFqFDJDEuLe4EqEnUz/n/P6Am9v4AbQyKNFV6m3EAAAAASUVORK5CYII=" />
+      </a>
+      <a href="https://www.linkedin.com">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAB0UlEQVRYR+2YzVXDMAzHpYRzafi4ZwOyAe0GZQQ2KBNQJihMQDdoNyBMQDeAOx8p5UoipJD0OU4gfU7Slkf8Xi+Obf38tyTLRdixhjvGAy1Q2YkUKvQcUM+yoFc2ucr3KAL/2EFfXyMH9LKkgQUwrWJs3bkRwPlRByfq+BzQ6zuNEOFy3UWrjCOCq8N9HP19INkJIcyRwGX1xlVUUecaKaRP4iMd1gVlBMSOd8aON0t3FgTkkQ0PdahkBMSTLtjxrlOArSskIAJlRTALbfA4JdxyV3drCtVh+Kc1jI6MbzuJrnm6KEebB8Q/bpzE1KTWJYABdy/Y0A2Pe5KotBBOkv4clxHQb1GGITiOgwuxxM7u0h5M8RP6aZ8WCJL93UbDXgOK/UqHUaBcjs7HjQGphlitbhHY25IEaKVSo0eWHJvkqLskCv2DDvYzoB80Zojhyh9N7rJ1fSgGWtJUdWA9hwWbBio7Er2SaPzIGChQk2aBupnSpgVqFVITo0TZ//Qh3rjPvnCfJjP1shQfURNfweMgM5e/n/L4XqXEmLuia+wwCvsa7ZuVH/Jqtb/vo8abXq+LwcKntLxeubiKi7CmmhRwdggzvSpo//0oU7xVqEyhLzau8DSslJSnAAAAAElFTkSuQmCC" />
+      </a>
+
+    </div>
+  </header>
+  <!-- End Of Nav Bar -->
+
+  <!-- Hero -->
+  <section id="home" class="pt-36 px-40">
+    <div class="container">
+      <div class="flex flex-wrap">
+        <div class="w-full self-center px-4">
+          <h1 class="text-primary-50 text-9xl font-bold tracking-wide">Hello! I'm Marco,
+          </h1>
+          <h1 class="text-primary-50 text-8xl font-bold tracking-wide text-left transition-all duration-1000">A <span
+              class="hover:line-through">Fullstuck</span>
+            <span class="text-primary-200">College
+              Student</span>
+          </h1>
+
+          <h2 class="text-primary-50 text-4xl mt-8">Have interest in <span id="typed" class="text-yellow-400"></span>
+          </h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Of Hero -->
+
+  <!-- About -->
+
+  <!-- End Of About -->
+
+  <!-- Portofolio -->
+
+  <!-- End Of Portofolio -->
+
+  <!-- Footer -->
+
+  <!-- End Of Footer -->
+
+  <script src="../dist/main.js"></script>
+</body>
+
+</html>
